@@ -16,17 +16,17 @@ int main()
   std::ios::sync_with_stdio(false);
   std::cin.tie(0);
 
-  int n;
-  cin>>n;
-
-  int x=n,answer=0;
-  while(x!=0) {
-    int digit=x%10;
-    answer=answer*10+digit;
-    x/=10;
+  string a,b;
+  cin>>a;
+  for(int i=a.size()-1;i>=0;i--) {
+    b+=a[i];
   }
+  int a1,b2;
+  a1=stoi(a);
+  b2=stoi(b);
 
-  if(n==answer) {
+  cout<<b2<<endl;
+  if(a1==b2) {
     cout<<"YES\n";
   }else {
     cout<<"NO\n";

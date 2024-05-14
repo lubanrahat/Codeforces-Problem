@@ -19,7 +19,9 @@ int main()
   double a,b;
   cin>>a>>b;
 
-  cout<<a+b<<endl;
+  int t=100-a;
+  double x=(100*b)/t;
+  cout<<fixed<<setprecision(2)<<x<<endl;
 
   return 0;
 }

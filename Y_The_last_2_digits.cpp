@@ -17,12 +17,20 @@ int main()
   std::ios::sync_with_stdio(false);
   std::cin.tie(0);
 
-  long long a,b,c,d,answer;
+  long long a,b,c,d,m;
   cin>>a>>b>>c>>d;
+  a%=100;
+  b%=100;
+  c%=100;
+  d%=100;
 
-  answer = (a*b*c*d)%100;
+  m = (a*b*c*d)%100;
 
-  cout<<answer<<endl;
+  if(m<10) {
+    cout<<0<<m;
+  }else {
+    cout<<m;
+  }
 
   return 0;
 }
